@@ -220,7 +220,9 @@
     width: 20%;
     overflow:hidden;
 }
+.price_button:hover{
 
+}
 .other{
     padding-top: 80px;
     padding-bottom: 80px;
