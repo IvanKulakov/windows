@@ -1,0 +1,316 @@
+
+.main {
+    font-family: "Roboto", sans-serif;
+    background: #fafbf6;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+.diya{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(45deg, #4e4e4e, #414345);
+    /*background: #4e4e4e;*/
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.diya_svg{
+    width: 80px;
+}
+.diya_text{
+    color: #fafbf6;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.background-header {
+    background: url("../img/standard11.jpg") no-repeat center;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+.head__nav__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav__block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main__text{
+    color: #4e4e4e;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 250px;
+}
+.header__text{
+    color: #4e4e4e;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.header__button{
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.header__button_text{
+    color: #4e4e4e;
+    font-size: 20px;
+    padding: 10px;
+}
+.header__button:hover{
+    background: linear-gradient(45deg, #4e4e4e, #414345);
+    color: #fafbf6;
+}
+.header__tel__block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__tel__text{
+    color: #4e4e4e;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.header__nav__link{
+    color: #4e4e4e;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.main_menu_blocks{
+    box-sizing: border-box;
+    position: relative;
+    top: -80px;
+    /*width: 80%;*/
+    background: #fafbf6;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05), 0px 4px 14px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+}
+.main_menu_block{
+    width: 33%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main_menu_block_text{
+    color: #4e4e4e;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+.vert_line{
+    width: 4px;
+    height: 126px;
+    background: rgba(200, 198, 216, 0.3);
+}
+
+.best{
+    padding-bottom: 80px;
+}
+.best_title_block{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+
+}
+.best_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.best_content_text{
+    color: #4e4e4e;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 40px;
+}
+.h1__title__best{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 20px;
+    border-left: 2px solid #fafbf6;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    width: 16.6%;
+    background: rgba(185, 185, 177, 0.2);
+    cursor: pointer;
+}
+.h1__title__best:hover{
+    background: rgba(185, 185, 177, 0.4);
+}
+.img_size{
+    width: 20%;
+}
+
+.diya_img_size{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.h1__title{
+    color: #4e4e4e;
+    font-size: 30px;
+    text-align: center;
+}
+.background-price{
+    background: url("../img/okno копия.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.price_content{
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+}
+.price_content_color{
+    background: rgba(185, 185, 177, 0.2);
+}
+.price_content_text{
+    color: #4e4e4e;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.other{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.other_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.other_img_ize{
+    width: 30%;
+}
+.h2_other{
+    color: #4e4e4e;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text_other{
+    color: #4e4e4e;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.text_other_pl{
+    padding-left: 40px;
+}
+.text_other_pr{
+    padding-right: 40px;
+}
+.other_button{
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+}
+.other__button_text{
+    padding: 10px;
+    color: #4e4e4e;
+    font-size: 20px;
+}
+.other_button:hover{
+    background: linear-gradient(45deg, #4e4e4e, #414345);
+    color: #fafbf6;
+}
+
+
+
+.contacts{
+    background: url("../img/map.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 80px;
+}
+.footer{
+    background: rgba(185, 185, 177, 0.8);
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.footer_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__text{
+    color: #4e4e4e;
+    font-size: 14px;
+}
+.footer__svg{
+    fill: #4e4e4e;
+    padding-right: 5px;
+}
+.line-1 {
+    background: #4e4e4e;
+    width: 79px;
+    height: 4px;
+    margin-right: 15px;
+}
+.line-2{
+    background: #4e4e4e;
+    width: 79px;
+    height: 4px;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+.line-pos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.invisible{
+    display: none;
+}
+.active_title{
+    background: linear-gradient(45deg, #4e4e4e, #414345);
+    color: #fafbf6;
+}
+.active_title:hover{
+    background: linear-gradient(45deg, #4e4e4e, #414345);
+    color: #fafbf6;
+}
