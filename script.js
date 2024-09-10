@@ -1,5 +1,5 @@
 
-// best block
+// start best block
 try{
     const bestTitleItem = document.getElementsByClassName('h1__title__best');
     const bestContentItems = document.getElementsByClassName('best_content')
@@ -61,3 +61,32 @@ try{
 catch (e) {
     console.log(e)
 }
+// end best block
+
+
+//btn-up block start
+try{
+    const btnUp = document.getElementById('button-up');
+    const scrollUp = () => {
+        if (document.documentElement.scrollTop > 300) {
+            btnUp.classList.remove('show');
+        } else {
+            btnUp.classList.add('show')
+        }
+    }
+
+    const scrollingUp = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    btnUp.addEventListener('click', scrollingUp );
+    window.addEventListener('scroll', scrollUp);
+}
+catch (e){
+    console.log(e)
+}
+//btn-up block end

@@ -21,6 +21,32 @@
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    position: relative;
+    overflow-x: hidden;
+}
+.diya .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    opacity: 0.2;
+    transform: skewX(-45deg);
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 5s infinite linear;
+
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%;
+    }
+    100% {
+        left: -150%;
+    }
 }
 .diya_svg{
     width: 80px;
@@ -31,6 +57,17 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+.diya_text_span{
+    color: #fafbf6;
+}
+ .diya:hover .diya_text_span{
+     background: linear-gradient(45deg, #1E9600 33%, #FFF200 66%, #FF0000);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+/*.diya:hover{*/
+/*    text-shadow: 1px 1px 2px #fafbf6;*/
+/*}*/
 .background-header {
     background: url("../img/standard11.jpg") no-repeat center;
     background-size: cover;
@@ -336,4 +373,81 @@
 .active_title:hover{
     background: linear-gradient(45deg, #4e4e4e, #414345);
     color: #fafbf6;
+}
+.button-up {
+    background: rgba(0,0,0,.2);
+    box-sizing: border-box;
+    /*border-radius: 4px;*/
+    position: fixed;
+    transition: background-color .3s;
+    z-index: 998;
+    //opacity: 0.5;
+    cursor: pointer;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+}
+.button-up_svg{
+    /*margin-bottom: 11px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.button-up_text{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.show {
+    display: none;
+}
+
+@media (min-width: 320px) {
+    .button-up_text{
+        display: none
+    }
+    .button-up_line{
+        display: none;
+    }
+    .button-up{
+        width: 70px;
+        height: 70px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+@media (min-width: 410px) {
+}
+@media (min-width: 510px) {
+}
+@media (min-width: 610px) {
+    .button-up{
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+
+    }
+
+}
+@media (min-width: 710px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+}
+@media (min-width: 910px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1010px) {
+}
+@media (min-width: 1110px) {
+}
+@media (min-width: 1210px) {
+}
+@media (min-width: 1810px) {
 }
