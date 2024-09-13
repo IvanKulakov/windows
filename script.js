@@ -90,3 +90,65 @@ catch (e){
     console.log(e)
 }
 //btn-up block end
+
+//modal block start
+try {
+    const btnOpenModal = document.getElementById('openModal');
+    console.log(btnOpenModal);
+    const btnClosedModal = document.getElementById('close_icon');
+    const btnsubmit = document.getElementById('closedModal');
+    const modal = document.getElementById('modal');
+    const userNameInput = document.getElementById('userNameInput');
+    const userPhoneInput = document.getElementById('userPhoneInput');
+
+    const open = function (){
+        modal.classList.add('modal-active');
+        // body.classList.add('main_hidden');
+    }
+
+    const closed = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        sendToTelegram(userNameInput.value, userPhoneInput.value);
+        userNameInput.value = "";
+        userPhoneInput.value = "";
+        modal.classList.remove('modal-active');
+        // body.classList.remove('main_hidden');
+    }
+    const exit = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        userNameInput.value = "";
+        userPhoneInput.value = "";
+        modal.classList.remove('modal-active');
+        // body.classList.remove('main_hidden');
+    }
+    try{
+        const openModalMob = document.getElementById('openModalMob');
+        openModalMob.addEventListener('click', open);
+    }
+    catch (e)
+    {
+        console.log(e)
+    }
+    btnOpenModal.addEventListener('click', open);
+    btnClosedModal.addEventListener('click', exit);
+    btnsubmit.addEventListener('click', closed);
+    userPhoneInput.addEventListener('focus', _ => {
+        if(!/^\+\d*$/.test(userPhoneInput.value))
+            userPhoneInput.value = '+38';
+
+    });
+
+    userPhoneInput.addEventListener('keypress', e => {
+        if(!/\d/.test(e.key)) {
+            e.preventDefault();
+        }
+    });
+
+
+}
+catch (e){
+    console.log(e)
+}
+//modal block end
