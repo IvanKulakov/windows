@@ -303,6 +303,8 @@
     margin-top: 40px;
     border: none;
     cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(185, 185, 177);
+
 }
 .other__button_text{
     padding: 10px;
