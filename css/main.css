@@ -36,7 +36,6 @@
     animation: flareAnimation 5s infinite linear;
 
 }
-
 @keyframes flareAnimation {
     0% {
         left: -150%;
@@ -59,6 +58,7 @@
 }
 .diya_text_span{
     color: #fafbf6;
+    font-weight: bold;
 }
  .diya:hover .diya_text_span{
      background: linear-gradient(45deg, #1E9600 33%, #FFF200 66%, #FF0000);
@@ -100,6 +100,8 @@
     margin-top: 20px;
     border: none;
     cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(185, 185, 177);
+
 }
 .header__button_text{
     color: #4e4e4e;
@@ -319,6 +321,60 @@
     background-size: cover;
     padding-top: 80px;
 }
+.contacts_content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacts_content_pos{
+    display: flex;
+    flex-direction: row;
+}
+.contacts_content_icon{
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+.contacts_content_tel{
+    color: #4e4e4e;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(185, 185, 177);
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+.contacts_content_text{
+    color: #4e4e4e;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.contacts_time{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: flex-end;*/
+}
+.footer-centre-input_block{
+}
+.footer-centre-input_title{
+    font-size: 12px;
+    line-height: 16px;
+    color: #4e4e4e;
+    margin-bottom: 8px;
+}
+.footer-centre-input{
+    margin-bottom: 8px;
+    background: none;
+    width: 300px;
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 19px;
+    border: #4e4e4e 2px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .footer{
     background: rgba(185, 185, 177, 0.8);
     margin-top: 80px;
