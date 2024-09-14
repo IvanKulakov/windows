@@ -22,6 +22,7 @@
     cursor: pointer;
     position: relative;
     overflow-x: hidden;
+    text-decoration: none;
 }
 .diya .flare {
     position: absolute;
@@ -55,6 +56,7 @@
     padding-left: 40px;
     padding-right: 40px;
     transition: transform 0.5s ease 0.2s;
+    text-decoration: none;
 }
 .diya_text_span{
     color: #fafbf6;
@@ -126,6 +128,7 @@
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .main_menu_blocks{
     box-sizing: border-box;

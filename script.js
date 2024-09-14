@@ -63,7 +63,6 @@ catch (e) {
 }
 // end best block
 
-
 //btn-up block start
 try{
     const btnUp = document.getElementById('button-up');
