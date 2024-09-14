@@ -94,7 +94,6 @@ catch (e){
 //modal block start
 try {
     const btnOpenModal = document.getElementById('openModal');
-    console.log(btnOpenModal);
     const btnClosedModal = document.getElementById('close_icon');
     const btnsubmit = document.getElementById('closedModal');
     const modal = document.getElementById('modal');
@@ -109,7 +108,7 @@ try {
     const closed = function (event) {
         event.preventDefault();
         event.stopPropagation();
-        sendToTelegram(userNameInput.value, userPhoneInput.value);
+        // sendToTelegram(userNameInput.value, userPhoneInput.value);
         userNameInput.value = "";
         userPhoneInput.value = "";
         modal.classList.remove('modal-active');

@@ -55,16 +55,21 @@
     font-size: 18px;
     padding-left: 40px;
     padding-right: 40px;
+    transition: transform 0.5s ease 0.2s;
 }
 .diya_text_span{
     color: #fafbf6;
     font-weight: bold;
 }
- .diya:hover .diya_text_span{
-     background: linear-gradient(45deg, #1E9600 33%, #FFF200 66%, #FF0000);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-}
+/* .diya:hover .diya_text_span{*/
+/*     background: linear-gradient(45deg, #1E9600 33%, #FFF200 66%, #FF0000);*/
+/*     -webkit-background-clip: text;*/
+/*     -webkit-text-fill-color: transparent;*/
+/*}*/
+ .diya:hover .diya_text{
+     transform: scale(1.1);
+     transition: transform 0.5s;
+ }
 /*.diya:hover{*/
 /*    text-shadow: 1px 1px 2px #fafbf6;*/
 /*}*/
@@ -101,6 +106,7 @@
     border: none;
     cursor: pointer;
     box-shadow: 1px 1px 2px rgb(185, 185, 177);
+    transition: background 0.5s;
 
 }
 .header__button_text{
@@ -109,7 +115,8 @@
     padding: 10px;
 }
 .header__button:hover{
-    background: linear-gradient(45deg, #4e4e4e, #414345);
+    transition: background 0.5s;
+    background: #4e4e4e;
     color: #fafbf6;
 }
 .header__tel__block{
@@ -247,20 +254,27 @@
     padding-top: 5px;
 }
 .price_button{
-    background: linear-gradient(45deg, #4e4e4e, #414345);
     cursor: pointer;
     border: none;
     margin-top: 30px;
+    transition: background 0.5s;
+    background: rgba(185, 185, 177, 0.6);
+    /*background: #fafbf6;*/
+    color: #4e4e4e;
+
 }
 .price_button_text{
     padding: 10px;
-    color: #fafbf6;
+
     font-size: 20px;
     width: 20%;
+    /*border: 1px #4e4e4e solid;*/
     overflow:hidden;
 }
 .price_button:hover{
-
+    transition: background 0.5s;
+    background: #4e4e4e;
+    color: #fafbf6;
 }
 .other{
     padding-top: 80px;
@@ -303,16 +317,20 @@
     margin-top: 40px;
     border: none;
     cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.8s;
+    background: rgba(200, 198, 216, 0.3);
     box-shadow: 1px 1px 2px rgb(185, 185, 177);
+    color: #4e4e4e;
 
 }
 .other__button_text{
     padding: 10px;
-    color: #4e4e4e;
     font-size: 20px;
 }
 .other_button:hover{
-    background: linear-gradient(45deg, #4e4e4e, #414345);
+    transition: background 0.5s;
+    background: #4e4e4e;
     color: #fafbf6;
 }
 
@@ -508,7 +526,7 @@
     z-index: 999;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -526,7 +544,7 @@
 }
 .modal__content {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05), 0px 4px 14px rgba(0, 0, 0, 0.15);
-    background: #FFFFFF;
+    background: #fafbf6;
     box-sizing: border-box;
     width:602px;
     padding: 80px;
@@ -537,14 +555,21 @@
     top: 24px;
     left: 546px;
     cursor: pointer;
+    transition: transform 0.5s;
+
+}
+.close_icon:hover{
+    transform: scale(1.8);
+    transition: transform 0.5s;
 }
 .input-form {
+    background: none;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #1A1A1D;
     margin-bottom: 15px;
     font-size: 18px;
-    color: #C0C0C0;
+    color: #fafbf6;
     outline: none;
     padding: 14px;
 }
@@ -559,7 +584,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #1A1A1D;
+    color: #4e4e4e;
     opacity: 0.5;
     margin-bottom: 6px;
 }
@@ -567,9 +592,11 @@
     overflow: hidden;
 }
 .btn_modal {
-    background: #1A1A1D;
+    background: rgba(200, 198, 216, 0.3);
+    transition: background 0.5s;
+    box-shadow: 1px 1px 2px rgb(185, 185, 177);
     padding: 16px 20px;
-    color:  #ffffff;
+    color:  #4e4e4e;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -579,14 +606,18 @@
     margin-top: 60px;
 }
 .btn_modal:hover{
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s;
+    background: #4e4e4e;
+    color: #fafbf6;
+
 }
 .title_text_modal{
-    color: #1A1A1D;
+    color: #4e4e4e;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 .modal_block_title{
     display: flex;
