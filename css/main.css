@@ -1,4 +1,3 @@
-
 .main {
     font-family: "Roboto", sans-serif;
     background: #fafbf6;
@@ -61,18 +60,10 @@
     color: #fafbf6;
     font-weight: bold;
 }
-/* .diya:hover .diya_text_span{*/
-/*     background: linear-gradient(45deg, #1E9600 33%, #FFF200 66%, #FF0000);*/
-/*     -webkit-background-clip: text;*/
-/*     -webkit-text-fill-color: transparent;*/
-/*}*/
  .diya:hover .diya_text{
      transform: scale(1.1);
      transition: transform 0.5s;
  }
-/*.diya:hover{*/
-/*    text-shadow: 1px 1px 2px #fafbf6;*/
-/*}*/
 .background-header {
     background: url("../img/standard11.jpg") no-repeat center;
     background-size: cover;
@@ -105,7 +96,7 @@
     margin-top: 20px;
     border: none;
     cursor: pointer;
-    box-shadow: 1px 1px 2px rgb(185, 185, 177);
+    background: rgba(185, 185, 177, 0.6);
     transition: background 0.5s;
 
 }
@@ -215,7 +206,6 @@
 .img_size{
     width: 20%;
 }
-
 .diya_img_size{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -261,7 +251,6 @@
     background: rgba(185, 185, 177, 0.6);
     /*background: #fafbf6;*/
     color: #4e4e4e;
-
 }
 .price_button_text{
     padding: 10px;
@@ -276,6 +265,7 @@
     background: #4e4e4e;
     color: #fafbf6;
 }
+
 .other{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -333,8 +323,6 @@
     background: #4e4e4e;
     color: #fafbf6;
 }
-
-
 
 .contacts{
     background: url("../img/map.jpg") no-repeat center;

@@ -102,7 +102,7 @@ try {
 
     const open = function (){
         modal.classList.add('modal-active');
-        // body.classList.add('main_hidden');
+        document.body.classList.add('main_hidden');
     }
 
     const closed = function (event) {
@@ -112,7 +112,7 @@ try {
         userNameInput.value = "";
         userPhoneInput.value = "";
         modal.classList.remove('modal-active');
-        // body.classList.remove('main_hidden');
+        document.body.classList.remove('main_hidden');
     }
     const exit = function (event) {
         event.preventDefault();
@@ -120,7 +120,7 @@ try {
         userNameInput.value = "";
         userPhoneInput.value = "";
         modal.classList.remove('modal-active');
-        // body.classList.remove('main_hidden');
+        document.body.classList.remove('main_hidden');
     }
     try{
         const openModalMob = document.getElementById('openModalMob');
