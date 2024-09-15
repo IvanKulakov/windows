@@ -116,11 +116,32 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.header__tel__svg{
+    filter: none;
+    transition: filter 0.5s;
+}
+.header__tel__block:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.header__tel__block:hover .header__tel__svg{
+    filter: drop-shadow(1px 1px 4px #fafbf6);
+    transition: filter 0.5s;
 }
 .header__tel__text{
     color: #4e4e4e;
+    text-decoration: none;
     font-size: 20px;
     padding-left: 5px;
+    text-shadow: none;
+    transition: text-shadow 0.5s;
+}
+.header__tel__block:hover .header__tel__text{
+    text-shadow: 1px 1px 4px #fafbf6;
+    transition: text-shadow 0.5s;
 }
 .header__nav__link{
     color: #4e4e4e;
@@ -129,6 +150,16 @@
     padding-right: 20px;
     text-transform: uppercase;
     text-decoration: none;
+    text-shadow: none;
+    /*text-shadow: 1px 1px 3px #fafbf6;*/
+    transition: transform 0.5s, text-shadow 0.5s;
+
+}
+.header__nav__link:hover{
+    text-shadow: 1px 1px 4px #fafbf6;
+    transition: transform 0.5s, text-shadow 0.5s;
+    transform: scale(1.05);
+
 }
 .main_menu_blocks{
     box-sizing: border-box;
@@ -446,7 +477,7 @@
     box-sizing: border-box;
     /*border-radius: 4px;*/
     position: fixed;
-    transition: background-color .3s;
+    transition: opacity 0.5s, background-color .3s;
     z-index: 998;
     opacity: 0.5;
     cursor: pointer;
@@ -455,6 +486,7 @@
     display: flex;
 }
 .button-up:hover{
+    transition: opacity 0.5s;
     opacity: 1;
 
 }
