@@ -1,0 +1,17 @@
+@import "reset";
+@import "main";
+@import "modal";
+@import "btn_up";
+
+.main {
+  font-family: "Roboto", sans-serif;
+  background: #fafbf6;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}

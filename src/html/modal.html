@@ -1,0 +1,70 @@
+<!--modal-->
+<div id="modal" class="modal">
+  <div class="modal__content">
+    <svg
+            id="close_icon"
+            class="close_icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" fill="#F8F8F8" />
+      <g clip-path="url(#clip0_18_5089)">
+        <path
+                d="M15.8887 7.88867L8.1105 15.6668"
+                stroke="#B4B4B4"
+                stroke-width="1.5"
+        />
+        <path
+                d="M15.8887 15.667L8.1105 7.88882"
+                stroke="#B4B4B4"
+                stroke-width="1.5"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_18_5089">
+          <rect
+                  width="11"
+                  height="11"
+                  fill="white"
+                  transform="translate(12 4) rotate(45)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+    <div class="modal_block_title">
+      <p class="title_text_modal">Залишити замовлення</p>
+    </div>
+
+
+    <form>
+      <p class="input-form-title">Ваше ім'я</p>
+      <input
+              class="input-form"
+              id="userNameInput"
+              type="text"
+              name="userName"
+              placeholder="Як до вас звертатись"
+              value=""
+      />
+      <p class="input-form-title">Номер телефону</p>
+      <input
+              class="input-form"
+              id="userPhoneInput"
+              type="text"
+              name="userPhone"
+              placeholder="+380 __-__-__-___"
+              value=""
+      />
+      <button
+              id="closedModal"
+              class="btn_modal"
+              type="submit"
+      >
+        Залишити заявку
+      </button>
+    </form>
+  </div>
+</div>

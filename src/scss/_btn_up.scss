@@ -1,0 +1,82 @@
+
+.invisible{
+  display: none;
+}
+.active_title{
+  background: linear-gradient(45deg, #4e4e4e, #414345);
+  color: #fafbf6;
+}
+.active_title:hover{
+  background: linear-gradient(45deg, #4e4e4e, #414345);
+  color: #fafbf6;
+}
+.button-up {
+  background: rgba(0,0,0,.2);
+  box-sizing: border-box;
+  /*border-radius: 4px;*/
+  position: fixed;
+  transition: opacity 0.5s, background-color .3s;
+  z-index: 998;
+  opacity: 0.5;
+  cursor: pointer;
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+}
+.button-up:hover{
+  transition: opacity 0.5s;
+  opacity: 1;
+
+}
+.button-up_svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.show {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .button-up{
+    width: 70px;
+    height: 70px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (min-width: 410px) {
+}
+@media (min-width: 510px) {
+}
+@media (min-width: 610px) {
+  .button-up{
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+
+  }
+
+}
+@media (min-width: 710px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+}
+@media (min-width: 910px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1010px) {
+}
+@media (min-width: 1110px) {
+}
+@media (min-width: 1210px) {
+}
+@media (min-width: 1810px) {
+}
