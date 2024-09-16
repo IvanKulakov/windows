@@ -150,3 +150,22 @@ catch (e){
     console.log(e)
 }
 //modal block end
+
+//burger menu block start
+const burgerMenuOpenBTN = document.getElementById('burger-menu-open');
+const burgerMenu = document.getElementById('burger-menu');
+const burgerMenuCloseBTN = document.getElementById('burger-menu-close');
+const burgerMenuStickOpen = document.getElementById('open-burger-stick-menu');
+
+
+const openBurger = () => {
+    burgerMenu.classList.add('_active-burger-menu')
+}
+const closeBurger = () => {
+    burgerMenu.classList.remove('_active-burger-menu')
+}
+window.addEventListener('scroll', closeBurger)
+burgerMenuOpenBTN.addEventListener('click', openBurger);
+burgerMenuCloseBTN.addEventListener('click', closeBurger);
+burgerMenuStickOpen.addEventListener('click', openBurger);
+//burger menu block end

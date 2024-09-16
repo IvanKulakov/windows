@@ -2,16 +2,80 @@
 @import "main";
 @import "modal";
 @import "btn_up";
+@import "footer";
+@import "header_nav";
+@import "header_burger";
 
 .main {
   font-family: "Roboto", sans-serif;
   background: #fafbf6;
+}
+.wrapper {
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
 }
-.wrapper {
-  max-width: 1160px;
-  width: 100%;
-  margin: 0 auto;
+@media (min-width: 320px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 290px;
+    width: 100%;
+  }
+}
+@media (min-width: 410px) {
+  .wrapper {
+    max-width: 370px;
+  }
+}
+@media (min-width: 510px) {
+  .wrapper {
+    max-width: 470px;
+  }
+}
+@media (min-width: 610px) {
+  .wrapper {
+    max-width: 570px;
+  }
+}
+@media (min-width: 710px) {
+  .wrapper {
+    max-width: 670px;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+  .wrapper {
+    max-width: 770px;
+  }
+}
+@media (min-width: 910px) {
+  .wrapper {
+    max-width: 870px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 952px;
+  }
+}
+@media (min-width: 1010px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1110px) {
+  .wrapper {
+    max-width: 1070px;
+  }
+}
+@media (min-width: 1210px) {
+  .wrapper {
+    max-width: 1160px;
+  }
+}
+@media (min-width: 1810px) {
+  .wrapper {
+    max-width: 1440px;
+  }
 }
