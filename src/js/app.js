@@ -152,20 +152,46 @@ catch (e){
 //modal block end
 
 //burger menu block start
-const burgerMenuOpenBTN = document.getElementById('burger-menu-open');
-const burgerMenu = document.getElementById('burger-menu');
-const burgerMenuCloseBTN = document.getElementById('burger-menu-close');
-const burgerMenuStickOpen = document.getElementById('open-burger-stick-menu');
+try{
+    const burgerMenuOpenBTN = document.getElementById('burger-menu-open');
+    const burgerMenu = document.getElementById('burger-menu');
+    const burgerMenuCloseBTN = document.getElementById('burger-menu-close');
+    const burgerMenuStickOpen = document.getElementById('open-burger-stick-menu');
 
 
-const openBurger = () => {
-    burgerMenu.classList.add('_active-burger-menu')
+    const openBurger = () => {
+        burgerMenu.classList.add('_active-burger-menu')
+    }
+    const closeBurger = () => {
+        burgerMenu.classList.remove('_active-burger-menu')
+    }
+    window.addEventListener('scroll', closeBurger)
+    burgerMenuOpenBTN.addEventListener('click', openBurger);
+    burgerMenuCloseBTN.addEventListener('click', closeBurger);
+    burgerMenuStickOpen.addEventListener('click', openBurger);
 }
-const closeBurger = () => {
-    burgerMenu.classList.remove('_active-burger-menu')
+catch (e){
+    console.log(e)
 }
-window.addEventListener('scroll', closeBurger)
-burgerMenuOpenBTN.addEventListener('click', openBurger);
-burgerMenuCloseBTN.addEventListener('click', closeBurger);
-burgerMenuStickOpen.addEventListener('click', openBurger);
 //burger menu block end
+
+//stick_menu block start
+try{
+    const stickMenu = document.getElementById('stick_menu');
+    const header = document.getElementById('header');
+
+    const scrollMenu = () => {
+        stickMenu.style.width = `${header.offsetWidth}px`;
+        if (document.documentElement.scrollTop > header.offsetHeight) {
+            stickMenu.classList.add('_active-menu');
+        }
+        else {
+            stickMenu.classList.remove('_active-menu');
+        }
+    }
+    window.addEventListener('scroll', scrollMenu)
+}
+catch (e){
+    console.log(e)
+}
+//stick_menu block end
