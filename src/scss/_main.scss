@@ -88,37 +88,7 @@
     background: #4e4e4e;
     color: #fafbf6;
 }
-.main_menu_blocks{
-    box-sizing: border-box;
-    position: relative;
-    top: -80px;
-    /*width: 80%;*/
-    background: #fafbf6;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05), 0px 4px 14px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: row;
-    padding: 30px 10px;
-}
-.main_menu_block{
-    width: 33%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.main_menu_block_text{
-    color: #4e4e4e;
-    font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
 
-}
-.vert_line{
-    width: 4px;
-    height: 126px;
-    background: rgba(200, 198, 216, 0.3);
-}
 
 .best{
     padding-bottom: 80px;
