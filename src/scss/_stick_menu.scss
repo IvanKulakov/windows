@@ -61,14 +61,14 @@
   cursor: pointer;
 }
 .stick_menu-main-menu-mobile-line{
-  background: #1A1A1D;
+  background: #4e4e4e;
   height: 4px;
   width: 100%;
 }
 
 .header-burger_open{
   width: 100%;
-  background: #FFFFFF;
+  background: #fafbf6;
   padding-top: 20px;
   padding-bottom: 40px;
   position: fixed;
@@ -99,13 +99,13 @@
   position: absolute;
   width: 42px;
   height: 4px;
-  background: #1A1A1D;
+  background: #4e4e4e;
   transform: rotate(45deg);
 }
 .header-burger_open_top_line2{
   width: 42px;
   height: 4px;
-  background: #1A1A1D;
+  background: #4e4e4e;
   transform: rotate(-45deg);
 }
 .header-burger_open-menu{
@@ -120,7 +120,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
-  color: #1A1A1D;
+  color: #4e4e4e;
   padding-bottom: 20px;
   text-decoration: none;
 }

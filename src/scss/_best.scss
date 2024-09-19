@@ -1,0 +1,148 @@
+.best_big_block{
+}
+.best_title_block{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80px;
+
+}
+.best_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.h1__title__best{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #4e4e4e;
+  border-left: 2px solid #fafbf6;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+  width: 16.6%;
+  background: rgba(185, 185, 177, 0.2);
+  cursor: pointer;
+}
+.h1__title__best:hover{
+  background: rgba(185, 185, 177, 0.4);
+}
+.img_size{
+  width: 20%;
+}
+.invisible{
+  display: none;
+}
+.active_title{
+  background: linear-gradient(45deg, #4e4e4e, #414345);
+  color: #fafbf6;
+}
+.active_title:hover{
+  background: linear-gradient(45deg, #4e4e4e, #414345);
+  color: #fafbf6;
+}
+
+
+.img_size_mob{
+  width: 100%;
+}
+.best_mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.h1__title__best_mobile{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.best_content_text_mob{
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+
+@media (min-width: 320px) {
+  .best_big_block{
+    display: none;
+  }
+  .h1__title__best {
+    display: flex;
+    font-size: 14px;
+  }
+  .best_content_text{
+    color: #4e4e4e;
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 10px;
+  }
+  .best_content{
+    height: 300px;
+  }
+  .best_content_text_mob{
+    font-size: 16px;
+    line-height: 20px;
+    color: #4e4e4e;
+
+  }
+  .h1__title__best_mobile {
+    font-size: 20px;
+    color: #4e4e4e;
+    text-transform: uppercase;
+  }
+  }
+@media (min-width: 610px) {
+  .best_content_text_mob{
+    font-size: 20px;
+    line-height: 24px;
+
+  }
+  .h1__title__best_mobile {
+    font-size: 24px;
+  }
+}
+@media (min-width: 710px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+  .h1__title__best {
+    display: flex;
+    font-size: 20px;
+  }
+  .best_content_text{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
+  .best_big_block{
+    display: block;
+  }
+  .best_mobile{
+    display: none;
+  }
+}
+@media (min-width: 910px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1010px) {
+  .best_content{
+    height: auto;
+  }
+
+}
+@media (min-width: 1110px) {
+}
+@media (min-width: 1210px) {
+}
+@media (min-width: 1810px) {
+}
