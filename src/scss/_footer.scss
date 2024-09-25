@@ -118,9 +118,11 @@
 @media (min-width: 710px) {
   .contacts_time{
     padding-left: 20px;
+    padding-bottom: 0;
   }
   .contacts_content_pos {
     flex-direction: row;
+    align-items: center;
   }
   .contacts_content{
     flex-direction: row;
