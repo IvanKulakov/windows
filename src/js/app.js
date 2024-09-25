@@ -128,7 +128,6 @@ try{
     let y1 = null;
 
     const handleTouchStart = (event) => {
-        clearInterval(timerIdMob);
         const firstTouch = event.touches[0];
         x1 = firstTouch.clientX;
         y1 = firstTouch.clientY;
@@ -145,10 +144,10 @@ try{
             return false;
         }
         if (xDiff > 0){
-            stepRightMobTimer();
+            stepLeftMob();
         }
         if(xDiff < 0){
-            stepLeftMob();
+            stepRightMob();
         }
         x1 = null;
         y1 = null;
