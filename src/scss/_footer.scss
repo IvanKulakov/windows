@@ -17,8 +17,16 @@
   color: #4e4e4e;
   font-size: 26px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgb(185, 185, 177);
+  //text-shadow: 1px 1px 2px rgb(185, 185, 177);
   margin-bottom: 5px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-shadow: none;
+  transition: text-shadow 0.5s;
+}
+.contacts_content_tel:hover{
+  text-shadow: 1px 1px 4px rgba(185, 185, 177, 0.8);
+  transition: text-shadow 0.5s;
 }
 .contacts_content_text{
   color: #4e4e4e;
@@ -28,6 +36,9 @@
   /*display: flex;*/
   /*flex-direction: row;*/
   /*justify-content: flex-end;*/
+}
+.contacts_time_pos{
+  padding-bottom: 10px;
 }
 .contacts__button{
   margin-top: 20px;

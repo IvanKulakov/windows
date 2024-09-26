@@ -195,6 +195,14 @@ catch (e){
 //modal block start
 try {
     const btnOpenModal = document.getElementById('openModal');
+    const btnOpenModalPrice = document.getElementById('openModalPrice');
+    const btnOpenModalWS = document.getElementById('windowsSystem');
+    const btnOpenModalRS = document.getElementById('rolsSystem');
+    const btnOpenModalDO = document.getElementById('doorOutdoor');
+    const btnOpenModalDI = document.getElementById('doorIndoor');
+    const btnOpenModalMoskit = document.getElementById("moskit");
+    const btnOpenModalFabricBlinds = document.getElementById("fabricBlinds");
+    const btnOpenModalClimat = document.getElementById("climat");
     const btnClosedModal = document.getElementById('close_icon');
     const btnsubmit = document.getElementById('closedModal');
     const modal = document.getElementById('modal');
@@ -223,15 +231,15 @@ try {
         modal.classList.remove('modal-active');
         document.body.classList.remove('main_hidden');
     }
-    try{
-        const openModalMob = document.getElementById('openModalMob');
-        openModalMob.addEventListener('click', open);
-    }
-    catch (e)
-    {
-        console.log(e)
-    }
     btnOpenModal.addEventListener('click', open);
+    btnOpenModalPrice.addEventListener("click", open);
+    btnOpenModalWS.addEventListener("click", open);
+    btnOpenModalRS.addEventListener("click", open);
+    btnOpenModalDO.addEventListener("click", open);
+    btnOpenModalDI.addEventListener("click", open);
+    btnOpenModalMoskit.addEventListener("click", open);
+    btnOpenModalFabricBlinds.addEventListener("click", open);
+    btnOpenModalClimat.addEventListener("click", open);
     btnClosedModal.addEventListener('click', exit);
     btnsubmit.addEventListener('click', closed);
     userPhoneInput.addEventListener('focus', _ => {
