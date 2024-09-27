@@ -209,15 +209,31 @@ try {
     const userNameInput = document.getElementById('userNameInput');
     const userPhoneInput = document.getElementById('userPhoneInput');
 
+    let itemName = {
+        openModal : 'титул',
+        openModalPrice : 'прайс на работи',
+        windowsSystem : 'віконні системи',
+        rolsSystem : 'захисні ролети',
+        doorOutdoor : 'вхідні двері',
+        doorIndoor : 'внітрішні двері',
+        moskit : 'москітні сітки',
+        fabricBlinds : 'тканеві ролети',
+        climat : 'кондиціонери',
+    }
+
+    let idButton
     const open = function (){
         modal.classList.add('modal-active');
         document.body.classList.add('main_hidden');
+        idButton=event.target.id;
+        return idButton;
     }
+
 
     const closed = function (event) {
         event.preventDefault();
         event.stopPropagation();
-        // sendToTelegram(userNameInput.value, userPhoneInput.value);
+        sendToTelegram(itemName[idButton], userNameInput.value, userPhoneInput.value);
         userNameInput.value = "";
         userPhoneInput.value = "";
         modal.classList.remove('modal-active');
@@ -305,3 +321,42 @@ catch (e){
     console.log(e)
 }
 //stick_menu block end
+
+//telegram block start
+
+const sendToTelegram = (data, customer, telephone) => {
+    if(telephone.length > 5) {
+        const token = '7010775807:AAE2WfgujKgk-117ZQU8Jv9SM9JYX997GQs';
+        const chatId = '-1002458740988';
+        const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=Имя ${customer}, телефон ${telephone}, раздел ${data}`;
+        const xhttp = new XMLHttpRequest();
+        xhttp.open('GET', url, true);
+        xhttp.send();
+    }
+};
+
+//telegram block end
+
+//footer send block start
+const inputNameFooter = document.getElementById('inputNameFooter');
+const inputTelFooter = document.getElementById('inputTelFooter');
+const inputBtnFooter = document.getElementById('inputBtnFooter');
+const sendFooterData = function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    sendToTelegram('footer', inputNameFooter.value, inputTelFooter.value);
+    inputNameFooter.value = "";
+    inputTelFooter.value = "";
+}
+inputTelFooter.addEventListener('focus', _ => {
+    if(!/^\+\d*$/.test(inputTelFooter.value))
+        inputTelFooter.value = '+38';
+
+});
+inputTelFooter.addEventListener('keypress', e => {
+    if(!/\d/.test(e.key)) {
+        e.preventDefault();
+    }
+});
+inputBtnFooter.addEventListener('click', sendFooterData);
+//footer send block end
