@@ -98,6 +98,24 @@
   fill: #4e4e4e;
   padding-right: 5px;
 }
+.footer__lang{
+  display: flex;
+  flex-direction: row;
+}
+.footer__lang__link{
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer__lang__line{
+  width: 1px;
+  height: 14px;
+  background-color: #4e4e4e;
+}
+.footer__lang__link__action{
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 @media (min-width: 320px) {
   .footer_block{

@@ -209,6 +209,9 @@
     .h1__title{
         font-size: 26px;
     }
+    .main__text{
+        margin-top: 100px;
+    }
     .text_other{
         font-size: 16px;
         line-height: 20px;
@@ -224,7 +227,6 @@
     }
     .price_button{
         width: 100%;
-
     }
 }
 @media (min-width: 410px) {
@@ -257,6 +259,9 @@
     .price_button{
         width: 20%;
 
+    }
+    .main__text{
+        margin-top: 250px;
     }
 }
 @media (min-width: 768px) {
