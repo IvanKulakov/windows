@@ -1,0 +1,28 @@
+.lang_btn{
+  background: rgba(0,0,0,.2);
+  box-sizing: border-box;
+  /*border-radius: 4px;*/
+  position: fixed;
+  transition: opacity 0.5s, background-color .3s;
+  z-index: 998;
+  opacity: 0.5;
+  cursor: pointer;
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  bottom: 160px;
+  right: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.lang_btn_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lang_btn_text{
+  color: #4e4e4e;
+  font-size: 20px;
+}
