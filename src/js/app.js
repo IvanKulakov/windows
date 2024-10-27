@@ -323,6 +323,15 @@ catch (e){
 //stick_menu block end
 
 //telegram block start
+const ansWindow = document.getElementById('answer');
+const openAns = () => {
+    ansWindow.classList.add('modal-active');
+    document.body.classList.add('main_hidden');
+}
+const closedAns = () => {
+    ansWindow.classList.remove('modal-active');
+    document.body.classList.remove('main_hidden');
+}
 
 const sendToTelegram = (data, customer, telephone) => {
     if(telephone.length > 5) {
@@ -332,6 +341,8 @@ const sendToTelegram = (data, customer, telephone) => {
         const xhttp = new XMLHttpRequest();
         xhttp.open('GET', url, true);
         xhttp.send();
+        openAns();
+        setTimeout(closedAns, 1500)
     }
 };
 
